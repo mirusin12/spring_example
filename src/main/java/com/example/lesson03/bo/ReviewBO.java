@@ -12,9 +12,9 @@ public class ReviewBO {
 	@Autowired
 	private ReviewMapper reviewMapper;
 	
-	// input: X
+	// input: int id
 	// output: Review
-	public Review getReview() {
-		return reviewMapper.selectReview();
+	public Review getReview(int id) { // 필수 param 이니까 Integer 사용 X
+		return reviewMapper.selectReview(id);
 	}
 }
