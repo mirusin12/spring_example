@@ -27,6 +27,7 @@ public class Lesson04Ex02Controller {
 	
 	// DB insert => 방금 가입된 학생 화면
 	// http://localhost/lesson04/ex02/add-student
+	/*
 	@PostMapping("/add-student")
 	public String addStudent(
 			@ModelAttribute Student student, // jsp form 태그의 name == Student 필드명 => 매핑
@@ -36,12 +37,12 @@ public class Lesson04Ex02Controller {
 		studentBO.addStudent(student);
 		// DB select => 방금 가입된 학생
 		int id = student.getId();
-		Student newStudent = studentBO.get
+		// Student newStudent = studentBO.get
 				
 		// Model에 담는다. 최근 학생
 		model.addAttribute("student", newStudent);
 		// 화면 이동
 		return "lesson04/afterAddStudent";
 	}
-
+	 */
 }

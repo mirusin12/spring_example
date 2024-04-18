@@ -17,7 +17,6 @@ public class UserBO {
 	public void addUser(String name, String yyyymmdd,
 			String email, String introduce) {
 		userMapper.insertUser(name, yyyymmdd, email, introduce);
-		
 	}
 	
 	// input: X
@@ -25,4 +24,11 @@ public class UserBO {
 	public User getLatestUser() {
 		return userMapper.selectLatestUser();
 	}
+	
+	// input: name(String)
+	// output: boolean 중복: true 중복아님:false
+	public boolean isDuplicationByName(String name) {
+		return userMapper.isDuplicationByName(name);
+	}
+	
 }
